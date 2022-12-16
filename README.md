@@ -1,18 +1,4 @@
-# CarMarket
-SoftUni Final Web Project.
-
 ## :star2: CarMarket is an online car marketplace where you can trade cars.
-
-<!-- Table of Contents -->
-# :notebook_with_decorative_cover: Table of Contents
-
-- [About the Project](#star2-about-the-project)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-
-<!-- About the Project -->
-
-
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
