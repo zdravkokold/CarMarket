@@ -1,4 +1,4 @@
-## :star2: CarMarket is an online car marketplace where you can trade cars.
+## :star2: CarMarket is an online car marketplace where you can trade cars that are already listed on the market.
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
@@ -17,9 +17,8 @@
 ### :dart: Features
 
 - Becoming a dealer
-- Listing cars for sale
+- Reading car's details
 - Removing cars for sale
-- Editing car's details
 - Searching for cars
 - Buying cars
 - Selling cars
@@ -28,4 +27,4 @@
 ### :dart: Roles
 
 - User => Can only search for cars and see their details. You become user when you register.
-- Admin => Can do: add cars for sale, buy cars, sell cars, edit car details, delete cars. You become Admin when you become a Dealer. 
+- Admin => Can buy cars, sell cars and delete cars. You become Admin when you become a Dealer. 
