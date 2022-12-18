@@ -1,0 +1,55 @@
+﻿@using CarMarket.Services.Models.Car
+@model IEnumerable<CarModel>
+@{
+    ViewData["Title"] = "Home Page";
+    bool first = true;
+}
+
+@if (Model.Count() == 0)
+{
+    <div class="mt-4 p-5 bg-light">
+        <h1 class="display-4">Welcome to the best place for trading cars!</h1>
+        <p class="lead">
+            There are no cars in the system currently available!
+        </p>
+        <hr class="my-4">
+        
+    </div>
+}
+
+
+<div class="mb-5"></div>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        @foreach (var car in Model)
+        {
+            <div class="carousel-item @(first ? "active" : string.Empty)">
+
+                <img class="d-block w-90" style="height:600px" 
+                 src="@car.ImageURL" alt="@car.Make">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>
+                        <a class="btn btn-primary" asp-controller="Car" asp-action="Details"
+                       asp-route-id="@car.Id" asp-route-information="@car.Model-@car.Id" >@car.Make @car.Model</a>
+                    </h5>
+                </div>
+            </div>
+
+            first = false;
+        }
+    </div>
+
+    @if (Model.Count() > 1)
+    {
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    }
+</div>
+
