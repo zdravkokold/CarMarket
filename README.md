@@ -1,5 +1,4 @@
-## :star2: CarMarket is an online car marketplace where you can trade cars that are already listed on the market.
-
+## :star2: CarMarket is an online car marketplace where you can buy and sell cars.
 <!-- TechStack -->
 ### :space_invader: Tech Stack
 
