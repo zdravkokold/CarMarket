@@ -12,53 +12,41 @@ namespace CarMarket.Services.Models.Car
     {
         public int Id { get; set; }
 
-        [Required]
         [StringLength(CarMakeMaxLength, MinimumLength = CarMakeMinLength)]
         public string Make { get; set; }
 
-        [Required]
         [StringLength(CarModelMaxLength, MinimumLength = CarModelMinLength)]
         public string Model { get; set; }
 
-        [Required]
         [Display(Name = "Horsepower")]
         [Range(MinHorsePower, MaxHorsePower)]
         public int HorsePower { get; set; }
 
-        [Required]
         [Range(MinPrice, MaxPrice)]
         public int Price { get; set; }
 
-        [Required]
         [Display(Name = "Year Produced")]
         [Range(MinYearProduced, MaxYearProduced)]
         public int YearProduced { get; set; }
 
-        [Required]
         [Range(MinCarMileage, MaxCarMileage)]
         public int Mileage { get; set; }
 
-        [Required]
         [StringLength(ColorMaxLength, MinimumLength = ColorMinLength)]
         public string Color { get; set; }
 
-
-        [Required]
         [Display(Name = "Image URL")]
         [StringLength(ImageURLMaxLength, MinimumLength = ImageURLMinLength)]
         public string ImageURL { get; set; }
 
-        [Required]
         [Display(Name = "Category")]
         [Range(1, 5)]
         public int CategoryId { get; set; }
 
-        [Required]
         [Display(Name = "Engine Type")]
         [Range(1, 4)]
         public int EngineTypeId { get; set; }
 
-        [Required]
         [Display(Name = "Euro Standard")]
         [Range(1, 6)]
         public int EuroStandardId { get; set; }
