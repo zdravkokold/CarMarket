@@ -9,7 +9,6 @@ namespace CarMarket.Services.Models.Dealer
 {
     public class BecomeDealerModel
     {
-        [Required]
         [StringLength(15, MinimumLength = 7)]
         [Phone]
         [Display(Name = "Phone Number")]
